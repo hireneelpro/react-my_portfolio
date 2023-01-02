@@ -1,0 +1,86 @@
+.menu {
+  display: none;
+  font-size: 1.3rem;
+  color: var(--grey-400);
+  animation: pulse 2s infinite linear;
+  transition: var(--transition);
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-400);
+  }
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.2);
+    color: var(--primary-400);
+  }
+}
+
+.navbar {
+  // border: 1px solid var(--grey-700);
+  background-color: #000;
+  width: 12rem;
+  // position: fixed;
+}
+.nav-container {
+  height: 100vh;
+  display: grid;
+}
+.heading {
+  margin: 0;
+  padding: 2rem 0;
+  color: #24f5dc;
+  & h6 {
+    letter-spacing: 1px;
+  }
+}
+.page-link-container {
+  background-color: rgb(10, 10, 10);
+}
+.logo {
+  // color: white;
+  font-family: "Sevillana", cursive;
+  margin-bottom: 0;
+  font-weight: bolder;
+  &:hover {
+    color: #24f5dc;
+    cursor: pointer;
+  }
+}
+
+.link {
+  text-transform: uppercase;
+  padding: 0.3rem 0;
+  border-top: 0.1px solid rgb(50, 50, 50);
+  font-size: 1rem;
+  font-weight: 300;
+  //   color: #49c5b6;
+  color: var(--grey-300);
+  display: grid;
+  cursor: pointer;
+  &:hover {
+    color: #24f5dc;
+  }
+  &:last-child {
+    border-bottom: 1px solid rgb(50, 50, 50);
+  }
+
+  &.selected-link {
+    color: #24f5dc;
+  }
+}
+
+.ext-link-container {
+  background-color: rgb(10, 10, 10);
+}
+.ext-link {
+  padding: 10px;
+  color: white;
+  transition: var(--transition);
+  & i {
+    font-size: 1.5rem;
+  }
+  & :hover {
+    color: #49c5b6;
+  }
+}

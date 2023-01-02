@@ -1,0 +1,68 @@
+.contact-page {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.contact-header {
+  color: #24f5dc;
+  padding-top: 5rem;
+  font-weight: bolder;
+}
+.contact-text {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  padding: 0 2rem;
+}
+.contact-form {
+  padding: 2rem;
+  display: grid;
+  // align-items: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  grid-template-areas:
+    "a b"
+    "c c"
+    "d d"
+    "d d"
+    "e e";
+}
+.name {
+  grid-area: a;
+}
+.email {
+  grid-area: b;
+}
+.subject {
+  grid-area: c;
+}
+.message {
+  grid-area: d;
+  padding-left: 0.5rem;
+  // font-family:"Sevillana", cursive;
+}
+input {
+  border: none;
+  border-bottom: 3px solid #24f5dc;
+  padding-left: 0.5rem;
+}
+
+.contact-btn {
+  grid-area: e;
+  width: fit-content;
+}
+.my-links {
+  color: white;
+  text-align: left;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+
+  & a {
+    padding-left: 1rem;
+    font-weight: 400;
+    color: #24f5dc;
+  }
+}
