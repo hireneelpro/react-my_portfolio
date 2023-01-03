@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <h1 className="contact-header">Contact me</h1>
-      <h6 className="contact-text">
+      <p className="contact-text">
         I am interested in working full time with team of senior developers and
         ready to accept challanges to develop my skills. Contact me for any kind
         of suitable role.
-      </h6>
+      </p>
       <form className="contact-form">
         <input required className="name" type="text" placeholder="Name" />
 

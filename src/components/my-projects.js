@@ -5,7 +5,7 @@ import AllProjects from "./all-projects";
 const MyProjects = () => {
   return (
     <div className="my-projects">
-      <h2>Featured project</h2>
+      <h1>Featured project</h1>
       <FeaturedProject />
       <AllProjects />
 

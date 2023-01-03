@@ -2,9 +2,11 @@
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 2rem;
-  & h2 {
+  margin-top: 5rem;
+  text-align: left;
+  & h1 {
     color: #24f5dc;
+    padding: 2rem ;
   }
   & .project {
     padding: 2rem;
@@ -44,10 +46,11 @@ margin: 0;
 .project-details{
     & .project-text{
      color: white;
-     font-weight: 300;
-     font-size: 0.9rem;
-     letter-spacing: 1px;
+    //  font-weight: 300;
+    //  font-size: 0.9rem;
+    //  letter-spacing: 1px;
      text-align: justify;
+     margin-top: 3rem ;
     }
 }
 .skill-btn-container{

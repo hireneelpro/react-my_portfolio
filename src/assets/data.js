@@ -52,7 +52,8 @@ export const projectData = [
   {
     id: 9,
     name: "Blue Snapback",
-    imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+    // imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+    imageUrl: require("../images/trends.png"),
     price: 16,
   },
 ];
