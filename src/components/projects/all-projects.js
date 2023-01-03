@@ -1,5 +1,5 @@
 import "./all-projects.scss";
-import { projectData } from "../assets/data";
+import { projectData } from "../../assets/data";
 
 const AllProjects = () => {
   console.log(projectData);

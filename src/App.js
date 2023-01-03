@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navigation from "./routes/navigation";
 import MainPage from "./components/main-page";
-import MyProjects from "./components/my-projects";
+import MyProjects from "./components/projects/my-projects";
 import Contact from "./components/contact-form";
-import ProjectDetails from "./components/project-details";
-import Skills from "./components/skills";
+import ProjectDetails from "./components/projects/project-details";
+import Skills from "./components/skills/skills";
 import About from "./components/about";
 function App() {
   return (

@@ -1,0 +1,25 @@
+// ======= skills-range=====//
+.skills-range {
+  width: 100%;
+  padding: 2rem;
+
+  & .single-skill {
+    padding-bottom: 2rem ;
+    & .skill-name {
+      text-align: left;
+      color: white;
+      margin-bottom: 0;
+      
+    }
+
+    & .value {
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      & .value-achieved {
+        width: 80%;
+        height: 4px;
+      }
+    }
+  }
+}
