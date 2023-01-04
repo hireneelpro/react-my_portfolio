@@ -1,5 +1,4 @@
 import "./skills.scss";
-import { skillsData } from "../../assets/skill-data";
 import SkillsRange from "./skills-range";
 const Skills = () => {
   return (
@@ -39,7 +38,7 @@ const Skills = () => {
         for more details.
       </p>
       {/* ===== skill range ===== */}
-      < SkillsRange/>      
+      <SkillsRange />
     </div>
   );
 };

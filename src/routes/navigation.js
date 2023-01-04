@@ -8,7 +8,6 @@ const Navigation = () => {
       <div className="navbar">
         <nav className="nav-container">
           {/* ===== menu icon ===== */}
-          <i className="fas fa-bars menu"></i>
           {/* ===== heading ===== */}
           <div className="heading">
             <NavLink
@@ -24,24 +23,45 @@ const Navigation = () => {
           </div>
           {/* ===== page links ===== */}
           <div className="page-link-container">
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 `link ${isActive ? "selected-link" : ""}`
-              } to="about">
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                `link ${isActive ? "selected-link" : ""}`
+              }
+              to="about"
+            >
               about
             </NavLink>
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 `link ${isActive ? "selected-link" : ""}`
-              } to="/skills">
+              }
+              to="/skills"
+            >
               Skills
             </NavLink>
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 `link ${isActive ? "selected-link" : ""}`
-              } to="/projects">
+              }
+              to="/projects"
+            >
               projects
             </NavLink>
-            <NavLink className={({ isActive }) =>
+            <NavLink
+              className={({ isActive }) =>
                 `link ${isActive ? "selected-link" : ""}`
-              } to="/contact">
+              }
+              to="/contact"
+            >
               contact
             </NavLink>
           </div>

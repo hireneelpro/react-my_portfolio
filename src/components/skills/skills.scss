@@ -1,6 +1,6 @@
 .skills {
   width: 90%;
-  // max-width: 1170px;
+  max-width: 1170px;
   margin: 2rem auto;
   padding: 2rem;
   & h1 {
@@ -10,9 +10,15 @@
   & .skills-text {
     color: white;
     font-size: 1rem;
+    
     text-align: justify;
     & a {
       color: #24f5dc;
     }
+  }
+}
+@media screen and (min-width:768px) {
+  .skills{
+    padding: 4rem;
   }
 }

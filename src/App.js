@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navigation from "./routes/navigation";
-import MainPage from "./components/main-page";
+import HomePage from "./components/home-page";
 import MyProjects from "./components/projects/my-projects";
 import Contact from "./components/contact-form";
 import ProjectDetails from "./components/projects/project-details";
@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Navigation />}>
-          <Route index element={<MainPage />} />
+          <Route index element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="projects" element={<MyProjects />} />

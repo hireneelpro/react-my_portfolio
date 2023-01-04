@@ -1,4 +1,4 @@
-import "./main-page.scss";
+import "./home-page.scss";
 import photo  from "../images/my profile photo.jpg";
 
 const MainPage = () => {

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./my-projects.scss";
 import FeaturedProject from "./featured-project";
 import AllProjects from "./all-projects";

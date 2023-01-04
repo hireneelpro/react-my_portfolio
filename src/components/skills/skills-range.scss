@@ -1,25 +1,33 @@
 // ======= skills-range=====//
 .skills-range {
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
 
   & .single-skill {
-    padding-bottom: 2rem ;
+    padding-bottom: 2rem;
     & .skill-name {
       text-align: left;
       color: white;
       margin-bottom: 0;
-      
     }
 
     & .value {
       width: 100%;
-      height: 4px;
+      height: 3px;
       background-color: white;
+      overflow: hidden;
       & .value-achieved {
-        width: 80%;
-        height: 4px;
+        // width: 80%;
+        transition: all 1s linear;
+        transform: translateX(-100%);
+        height: 3px;
+        &.load{
+          transform: translateX(0);
+        }
       }
     }
   }
+}
+.value-achieved.load {
+  transform: translateX(0%);
 }
