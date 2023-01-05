@@ -1,9 +1,10 @@
 import "./skills.scss";
+import { addShake,removeShake } from "../../utils/utils";
 import SkillsRange from "./skills-range";
 const Skills = () => {
   return (
     <div className="skills">
-      <h1>
+      <h1 onMouseEnter={addShake} onMouseLeave={removeShake} >
         Skills & <br />
         Experience
       </h1>

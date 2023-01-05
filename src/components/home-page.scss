@@ -1,5 +1,4 @@
-
-.main-page{
+.main-page {
   width: 90%;
   height: 100vh;
   display: grid;
@@ -9,18 +8,50 @@
   // border: 1px solid white;
 }
 
-.main-page-heading{
+.main-page-heading {
   font-size: 3rem;
   text-transform: none;
   text-align: left;
-  color: #24f5dc
+  color: #24f5dc;
+
 
 }
-.image-container{
+.image-container {
   border-top: 5px solid #24f5dc;
 }
-.profile-photo{
-height: 250px;
-width:230px;
-// object-fit: cover;
+.profile-photo {
+  height: 250px;
+  width: 230px;
+  // object-fit: cover;
 }
+
+// ======== logo ===== //
+.logo {
+  animation: fly 2s linear 1 forwards;
+  transform: translateY(-100%);
+}
+@keyframes fly {
+  70% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: scale(1.4,0.8);
+  }
+  80% {
+    transform: scale(1,1);
+  }
+  85% {
+    transform: scale(1.01,0.9);
+  }
+  90% {
+    transform: scale(1,1);
+  }
+  95% {
+    transform: scale(1.05,0.95);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+// ===== heading =====//

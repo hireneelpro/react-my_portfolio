@@ -1,9 +1,10 @@
 import "./contact-form.scss";
+import { addShake,removeShake } from "../utils/utils";
 
 const Contact = () => {
   return (
     <div className="contact-page">
-      <h1 className="contact-header">Contact me</h1>
+      <h1 onMouseEnter={addShake} onMouseLeave={removeShake} className="contact-header">Contact me</h1>
       <p className="contact-text">
         I am interested in working full time with team of senior developers and
         ready to accept challanges to develop my skills. Contact me for any kind
