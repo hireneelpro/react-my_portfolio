@@ -8,7 +8,22 @@ import Contact from "./components/contact-form";
 import ProjectDetails from "./components/projects/project-details";
 import Skills from "./components/skills/skills";
 import About from "./components/about";
+import { projectData } from "./assets/data";
+import { storeCollectionAndDocuments } from "./utils/firebase/firebase.utils";
+import { useEffect } from "react";
+import { getCollectionAndDocuments } from "./utils/firebase/firebase.utils";
+import { useDispatch } from "react-redux";
+import {
+ FETCHING_PROJECTS_ASYNC
+} from "./redux-store/projects/projects-action";
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    // storeCollectionAndDocuments("all-projects", projectData);
+  dispatch(FETCHING_PROJECTS_ASYNC())
+    
+    
+  }, []);
   return (
     <div className="app">
       <Routes>

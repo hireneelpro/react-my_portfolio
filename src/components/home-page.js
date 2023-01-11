@@ -21,7 +21,7 @@ const MainPage = () => {
         I believe in giving my best in whatever I perform
       </h5>
       <div className="image-container">
-        <img className="profile-photo" src={photo} alt="Hiren Patel" />
+        <img className="profile-photo" src={require("../images/my profile photo.jpg")} alt="Hiren Patel" />
       </div>
     </div>
   );
