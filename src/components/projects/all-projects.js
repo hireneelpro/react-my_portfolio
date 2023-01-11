@@ -1,9 +1,14 @@
 import "./all-projects.scss";
-import { projectData } from "../../assets/data";
-import { addShake,removeShake } from "../../utils/utils";
+// import { projectData } from "../../assets/data";
+import { addShake, removeShake } from "../../utils/utils";
+import { useSelector } from "react-redux";
+import { selectProjects } from "../../redux-store/projects/projects-selector";
+
 
 const AllProjects = () => {
-  console.log(projectData);
+  const allProjects = useSelector(selectProjects)
+  console.log(allProjects);
+  const projectData = allProjects[0].data
   return (
     <div className="all-projects">
       <h1 onMouseEnter={addShake} onMouseLeave={removeShake} >All Projects</h1>
