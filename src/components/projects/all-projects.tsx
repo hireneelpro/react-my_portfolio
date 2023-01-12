@@ -1,3 +1,4 @@
+import { projectData } from "../../assets/data";
 import "./all-projects.scss";
 // import { projectData } from "../../assets/data";
 import { addShake, removeShake } from "../../utils/utils";
@@ -11,9 +12,9 @@ export type Project = {
 };
 
 const AllProjects = () => {
-  const allProjects = useSelector(selectProjects);
-  console.log(allProjects);
-  const projectData = allProjects[0].data;
+  // const allProjects = useSelector(selectProjects);
+  // console.log(allProjects);
+  // const projectData = allProjects[0].data;
   return (
     <div className="all-projects">
       <h1 onMouseEnter={addShake} onMouseLeave={removeShake}>
