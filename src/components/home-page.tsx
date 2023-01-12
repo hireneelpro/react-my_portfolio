@@ -34,7 +34,7 @@ const MainPage = () => {
 
       </div>
       {/* ===================== */}
-      <span className="scroll-here">scroll-here</span>
+      {/* <span className="scroll-here">scroll-here</span> */}
       <About />
       <Skills />
       <MyProjects />

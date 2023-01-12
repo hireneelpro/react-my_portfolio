@@ -19,8 +19,8 @@ const Contact = () => {
 
         <textarea
           rows={5}
+          name="message"
           className="message"
-          type="text"
           placeholder="Message"
         />
 
